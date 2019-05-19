@@ -30,7 +30,7 @@
           )
         );
       },
-      'get,delete,head,post,put,patch': function(inMethod) {
+      'get,post,delete,put,head,patch,options': function(inMethod) {
         var self = this;
         return function(inUrl, inData, inOptions) {
           return self.request(inMethod, inUrl, inData, inOptions);
