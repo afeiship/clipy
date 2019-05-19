@@ -4,7 +4,7 @@
   var request = require('request');
 
   // use native promise:
-  request('requist-native-promise')
+  request('requist-native-promise');
 
   var NxRequest = nx.declare('nx.Request', {
     statics: {
