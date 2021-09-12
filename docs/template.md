@@ -6,8 +6,6 @@
 [![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
-![snapshot](https://tva1.sinaimg.cn/large/0081Kckwgy1gk87ynhkbaj30u60asasp.jpg)
-
 ## installation
 ```shell
 git clone https://github.com/afeiship/clipy.git
@@ -17,7 +15,8 @@ npm i && npm link
 
 ## usage
 ~~~
-__USAGE__
+clipy hello
+clipy `pwd`
 ~~~
 
 ## license
