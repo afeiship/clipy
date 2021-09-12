@@ -1,36 +1,46 @@
 {
-  "name": "next-request",
+  "name": "@jswork/clipy",
   "version": "1.0.0",
-  "description": "A wrapper for request",
-  "homepage": "https://github.com/afeiship/next-request",
+  "description": "Pbcopy for nodejs.",
+  "homepage": "https://github.com/afeiship/clipy",
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
   },
+  "bin": {
+    "clipy": "bin/index.js"
+  },
   "scripts": {
     "build": "gulp",
-    "test": "jest",
-    "version": "gulp bump"
+    "release": "release-it"
   },
-  "main": "dist/next-request.js",
+  "main": "index.js",
   "license": "MIT",
-  "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-bump": "^2.7.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-header": "^2.0.7",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-size": "^2.1.0",
-    "gulp-uglify": "^2.1.2",
-    "jest": "^23.6.0",
-    "next-nice-comments": "github:afeiship/next-nice-comments",
-    "uglify-save-license": "^0.4.1",
-    "yargs": "^4.7.1"
-  },
   "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2",
-    "request-promise-native": "^1.0.7"
-  }
+    "chalk": "^4.1.0",
+    "clipboardy": "^2.3.0",
+    "commander": "^6.2.0",
+    "gulp-rename": "^2.0.0",
+    "require-dir": "^1.2.0",
+    "yargs": "^13.2.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "@jswork/next": "^1.0.5",
+    "@jswork/next-absolute-package": "^1.0.1",
+    "@jswork/next-get-key": "^1.0.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.5",
+    "gulp-replace": "^1.0.0",
+    "prettier": "^2.1.2",
+    "release-it": "^14.2.1"
+  },
+  "keywords": [
+    "boilerplate",
+    "cli"
+  ]
 }
